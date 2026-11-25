@@ -10,5 +10,20 @@
     "passenger_name": "Ayushi Agrahari",
     "passenger_age": 25,
     "booked_at_utc": "2026-11-25T13:02:38.325482+00:00"
+  },
+  {
+    "source": "local_fallback",
+    "fallback_reason": "502 Server Error: Bad Gateway for url: https://api.duffel.com/air/orders",
+    "pnr": "FBK-46712C",
+    "flight_id": "off_0353mkK1lFqZRcsaLbJbQ9",
+    "airline": "TAP Air Portugal",
+    "route": "LHR -> JFK",
+    "date": "2026-12-15",
+    "departure": "2026-12-15T18:30:00",
+    "amount": "676.05",
+    "currency": "AUD",
+    "passenger_name": "Ayushi Agrahari",
+    "passenger_age": 31,
+    "booked_at_utc": "2026-11-25T15:37:04.842747+00:00"
   }
 ]

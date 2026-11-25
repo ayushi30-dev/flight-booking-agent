@@ -1,3 +1,6 @@
+"""This file runs the local ChatOllama conversation loop (qwen model) &
+enforces a terminal yes/no human-in-the-loop confirmation prompt before book_flight executes"""
+
 import json
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
@@ -28,7 +31,10 @@ def prompt_yes_no_confirmation(tool_args: dict) -> bool:
         print(f"Flight     : {flight['flight_id']} ({flight['airline']})")
         print(f"Route      : {flight['origin']} -> {flight['destination']} on {flight['date']}")
         print(f"Departure  : {flight['departure']} | Arrival: {flight['arrival']}")
-        print(f"Fare       : Rs. {flight['fare_inr']}")
+        if flight.get("amount") and flight.get("currency"):
+            print(f"Fare       : {flight['currency']} {flight['amount']}")
+        else:
+            print(f"Fare       : Rs. {flight.get('fare_inr')}")
     else:
         print(f"Flight ID  : {flight_id}")
     print(f"Passenger  : {passenger_name} (Age: {passenger_age})")
@@ -86,7 +92,7 @@ def main():
                     else:
                         tool_result = json.dumps({
                             "status": "cancelled",
-                            "message": "Booking cancelled by user at confirmation prompt. No changes made."
+                            "message": "Booking cancelled by user at confirmation prompt. No changes made.",
                         })
                 else:
                     tool_result = tool_fn.invoke(tool_args)
