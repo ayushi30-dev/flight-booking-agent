@@ -1,0 +1,38 @@
+[
+  {
+    "flight_id": "6E-2104",
+    "airline": "IndiGo",
+    "origin": "DEL",
+    "destination": "BOM",
+    "date": "2026-12-05",
+    "departure": "07:15",
+    "arrival": "09:30",
+    "stops": 0,
+    "fare_inr": 4650,
+    "seats_available": 5
+  },
+  {
+    "flight_id": "AI-865",
+    "airline": "Air India",
+    "origin": "DEL",
+    "destination": "BOM",
+    "date": "2026-12-05",
+    "departure": "11:00",
+    "arrival": "13:20",
+    "stops": 0,
+    "fare_inr": 5400,
+    "seats_available": 4
+  },
+  {
+    "flight_id": "QP-1122",
+    "airline": "Akasa Air",
+    "origin": "DEL",
+    "destination": "BLR",
+    "date": "2026-12-05",
+    "departure": "06:40",
+    "arrival": "09:25",
+    "stops": 0,
+    "fare_inr": 4900,
+    "seats_available": 8
+  }
+]

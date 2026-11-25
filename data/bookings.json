@@ -1,0 +1,14 @@
+[
+  {
+    "pnr": "PNR-935B79",
+    "flight_id": "6E-2104",
+    "airline": "IndiGo",
+    "route": "DEL -> BOM",
+    "date": "2026-12-05",
+    "departure": "07:15",
+    "fare_inr": 4650,
+    "passenger_name": "Ayushi Agrahari",
+    "passenger_age": 25,
+    "booked_at_utc": "2026-11-25T13:02:38.325482+00:00"
+  }
+]
